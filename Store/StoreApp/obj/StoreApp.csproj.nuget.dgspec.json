@@ -78,7 +78,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\MVC\\Store\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\MVC\\Store\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -93,11 +97,77 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\MVC\\Store\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\MVC\\Store\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "C:\\MVC\\Store\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\MVC\\Store\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\MVC\\Store\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\MVC\\Store\\Entities\\Entities.csproj"
+              },
+              "C:\\MVC\\Store\\Repositories\\Repositories.csproj": {
+                "projectPath": "C:\\MVC\\Store\\Repositories\\Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
             }
           },
           "imports": [
@@ -147,6 +217,9 @@
               },
               "C:\\MVC\\Store\\Repositories\\Repositories.csproj": {
                 "projectPath": "C:\\MVC\\Store\\Repositories\\Repositories.csproj"
+              },
+              "C:\\MVC\\Store\\Services\\Services.csproj": {
+                "projectPath": "C:\\MVC\\Store\\Services\\Services.csproj"
               }
             }
           }

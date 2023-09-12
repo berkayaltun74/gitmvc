@@ -13,6 +13,7 @@ partial class Program
         builder.Services.ConfigureSession();
         builder.Services.ConfigureRepositoryRegistration();
         builder.Services.ConfigureServiceRegistration();
+        builder.Services.ConfigureRouting();
 
 
         builder.Services.AddAutoMapper(typeof(Program));
@@ -38,7 +39,7 @@ partial class Program
             endpoints.MapRazorPages();
         });
         app.ConfigureAndCheckMigration();
-
+        app.ConfigureLocalization();
         app.Run();
     }
 }

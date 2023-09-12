@@ -31,8 +31,7 @@ namespace Repositories
             .FilteredBySearchTerm(p.SearchTerm)
             .FilteredByPrice(p.MinPrice, p.MaxPrice, p.IsValidPrice);
         }
-
-
+ 
         // Interface
         public Product? GetOneProduct(int id, bool trackChanges)
         {
